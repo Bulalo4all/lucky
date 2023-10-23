@@ -5,18 +5,22 @@ import string
 with open("mydefaults.ini.txt") as ini_file:
     data = ini_file.read()
 
-#Create the beginning of a number count
+#Create the beginning of a letter count and number count
 number_of_letters = 0
+number_of_numbers = 0
 
-#create a variable to store ascii letters
+#create a variable to store ascii letters and digits
 alphabet = string.ascii_letters
+number_0_to_nine = sting.digits
 
 #create a list with each line of data from ini file
 lines = data.split("\n")
 
-#for loop to count the number of letters in the ini file
+#for loop to count the number of letters and digits in the ini file
 for line in lines:
     for letter in line:
         if letter in alphabet:
             number_of_letters += 1
-    print(line, number_of_letters)
+        elif letter in number_0_tonine:
+            number_of_numbers += 1
+    print(line, number_of_letters, number_of_numbers)
