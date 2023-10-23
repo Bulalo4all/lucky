@@ -23,4 +23,5 @@ for line in lines:
             number_of_letters += 1
         elif letter in number_0_tonine:
             number_of_numbers += 1
-    print(line, number_of_letters, number_of_numbers)
+            
+print(number_of_letters, number_of_numbers)
