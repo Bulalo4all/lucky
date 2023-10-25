@@ -31,3 +31,6 @@ print(number_of_letters, number_of_numbers)
 # file_output = open(name of file, file mode)
 # use the method write on the file handle returned from the open function
 
+file_output = open("fileoutput.txt", "w")
+file_output.write("Test 123")
+file_output.close()
